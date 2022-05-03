@@ -12,4 +12,4 @@ const resolvers = {
   }
 };
 
-buildSubgraphSchema({ typeDefs, resolvers });
+buildSubgraphSchema({ typeDefs: typeDefs[0].document, resolvers });
