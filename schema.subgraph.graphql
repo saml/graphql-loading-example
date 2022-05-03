@@ -4,3 +4,7 @@ type Category @key(fields: "id") {
   id: ID! @external
   name: String
 }
+
+type Quer {
+  query1: Category!
+}
