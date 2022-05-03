@@ -5,4 +5,4 @@ const { GraphQLFileLoader } = require("@graphql-tools/graphql-file-loader");
 
 module.exports = loadTypedefsSync(path.join(__dirname, "schema.subgraph.graphql"), {
   loaders: [new GraphQLFileLoader()],
-});
+}).map(d => d.document);
